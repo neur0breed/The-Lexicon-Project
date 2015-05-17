@@ -1,1 +1,0 @@
-JMdict_e is an XML file encoded in UTF-8 without BOM.
