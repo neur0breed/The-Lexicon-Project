@@ -3,10 +3,16 @@
 //
 
 #ifndef LEXICON_LEXICAL_H
+#include <string>
+
 #define LEXICON_LEXICAL_H
 
 
 class lexical {
+    private:
+        enum{};
+
+    public:
 
 };
 
