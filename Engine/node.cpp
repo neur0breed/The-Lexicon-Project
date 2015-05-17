@@ -7,7 +7,7 @@
 node::node()
 {
     this->word = "";
-    this->lexical = "";
+    this->category = *new lexical();
 }
 
 node::~node() {}
@@ -17,9 +17,9 @@ void node::setWord(std::string newWord)
     this->word = newWord;
 }
 
-void node::setLexical(std::string newLexical)
+void node::setLexical(lexical newLexical)
 {
-    this->lexical = newLexical;
+    this->category = newLexical;
 }
 
 std::string node::getWord()
@@ -27,7 +27,7 @@ std::string node::getWord()
     return this->word;
 }
 
-std::string node::getLexical()
+lexical node::getLexical()
 {
-    return this->lexical;
+    return this->category;
 }

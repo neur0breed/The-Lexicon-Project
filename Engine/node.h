@@ -7,6 +7,7 @@
 
 #include <string>
 #include <bits/stl_bvector.h>
+#include "lexical.h"
 
 class node {
 private:
