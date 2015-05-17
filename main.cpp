@@ -6,6 +6,10 @@
 using namespace std;
 
 int main() {
-    cout << "Hello, World!" << endl;
+    ofstream Output;
+    Output.open("Test.txt");
+    Output << "Test 2" << endl;
+    Output.flush();
+    Output.close();
     return 0;
 }
