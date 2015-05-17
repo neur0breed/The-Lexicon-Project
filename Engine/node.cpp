@@ -1,6 +1,5 @@
 //
 // Created by Nathan on 5/16/2015.
-//POTATOT
 //
 
 #include "node.h"
