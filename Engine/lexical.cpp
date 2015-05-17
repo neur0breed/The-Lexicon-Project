@@ -4,6 +4,6 @@
 
 #include "lexical.h"
 
-std::string getLexical(){
+lexical getLexical(){
 
 };
