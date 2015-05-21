@@ -10,9 +10,9 @@
 
 class lexical {
     private:
-        enum{};
+        //enum{};
 
-    public:
+   public:
 
 };
 

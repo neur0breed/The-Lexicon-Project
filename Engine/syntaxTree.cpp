@@ -6,17 +6,17 @@
 
 syntaxTree::syntaxTree()
 {
-    this->*headNode = *new node();
+    //this->*headNode = *new node();
 }
 
 syntaxTree::~syntaxTree() {}
 
 void syntaxTree::setHeadNode(node *newHeadNode)
 {
-    this->headNode = newHeadNode;
+    //this->headNode = newHeadNode;
 }
 
-node syntaxTree::getHeadNode()
+/*node syntaxTree::getHeadNode()
 {
     return this->*headNode;
-}
+}*/

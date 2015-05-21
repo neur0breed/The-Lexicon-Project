@@ -4,6 +4,3 @@
 
 #include "lexical.h"
 
-lexical getLexical(){
-
-};

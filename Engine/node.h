@@ -6,14 +6,14 @@
 #define LEXICON_NODE_H
 
 #include <string>
-#include <bits/stl_bvector.h>
+//#include <bits/stl_bvector.h>
 #include "lexical.h"
 
 class node {
 private:
     std::string word;
     lexical category;
-    std::vector<node> ass_nodes;
+    //std::vector<node> ass_nodes;
 
 public:
     node();
