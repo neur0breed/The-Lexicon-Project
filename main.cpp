@@ -2,6 +2,7 @@
 #include <fstream>
 #include <string>
 #include <bits/stream_iterator.h>
+#include <stdlib.h>
 
 std::string scraper(std::string word)
 {
@@ -23,16 +24,28 @@ std::string scraper(std::string word)
             lineNumber++;
         }
 
-        std::cout << lineNumber << ": " << line << std::endl;
+        //std::cout << lineNumber << ": " << line << std::endl;
 
         // search for word line by line
         getline(fs, line);
-        auto x = line.find(word);
+        auto x = line.find(">" + word + "<");
         if(x != std::string::npos)// if we find our word...
         {
             // print out position in document // DEBUG
-            std::cout << "Found on line " << lineNumber << "　in column " << x << std::endl;
-            return word;
+            std::cout << "Found on line " << lineNumber << std::endl;
+
+            while(fs.good())
+            {
+                std::string translation = "";
+                getline(fs, line);
+                auto y = line.find("<gloss>");
+                if(y != std::string::npos)
+                {
+                    translation = line.substr(7,line.length() - 15);
+                    return translation;
+                }
+            }
+            //return line;
         }
         lineNumber++;
     }
@@ -41,7 +54,7 @@ std::string scraper(std::string word)
 }
 
 int main() {
-    std::string test = scraper("くりかえし");
+    std::string test = scraper("白");
     std::cout << test << std::endl;
     /*
     std::ofstream Output;
@@ -49,5 +62,6 @@ int main() {
     Output << "Test 2" << std::endl;
     Output.close();
      */
+    system("pause");
     return 0;
 }
