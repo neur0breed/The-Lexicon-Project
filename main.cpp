@@ -31,7 +31,7 @@ std::string scraper(std::string word)
         if(x != std::string::npos)// if we find our word...
         {
             // print out position in document // DEBUG
-            std::cout << "Found on line " << lineNumber << "in column " << x << std::endl;
+            std::cout << "Found on line " << lineNumber << "ã€€in column " << x << std::endl;
             return word;
         }
         lineNumber++;
@@ -41,7 +41,7 @@ std::string scraper(std::string word)
 }
 
 int main() {
-    std::string test = scraper("‚­‚è‚©‚¦‚µ");
+    std::string test = scraper("ãã‚Šã‹ãˆã—");
     std::cout << test << std::endl;
     /*
     std::ofstream Output;

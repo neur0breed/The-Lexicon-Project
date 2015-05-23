@@ -1,6 +1,13 @@
 # Linguistic-Engine
 SIP Translation Software
 
+## For a working environment (CLion)
+In CLion: File->Settings->Editor->Code Style->File Encodings->...
+Change the IDE Encoding to UTF-8, Project Encoding to x-UTF-16LE-BOM, and Default Encoding for properites files to x-UTF-16LE-BOM.
+Will test out more settings, but these work.
+
+
+
 ## Project Description
 This project consists of developing an application programming interface for facilitating the translation of phrases 
 between languages with a greater degree of accuracy than other open source or free linguistic engines. This API will 
