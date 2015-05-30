@@ -3,6 +3,7 @@
 #include <string>
 #include <bits/stream_iterator.h>
 #include <stdlib.h>
+#include "DB/dbManager.h"
 
 std::string scraper(std::string word)
 {
@@ -54,14 +55,26 @@ std::string scraper(std::string word)
 }
 
 int main() {
-    std::string test = scraper("白");
-    std::cout << test << std::endl;
+    //std::string test = scraper("内閣官房参与");
+    //std::cout << test << std::endl;
+
+    dbManager dbManager1;
+    if(dbManager1.ConnectDB())
+    {
+        dbManager1.addRow();
+        dbManager1.updateRow();
+        dbManager1.getTableData("japanese");
+        dbManager1.DisconnectDB();
+    }
+
     /*
     std::ofstream Output;
     Output.open("Dict_Files/Test.txt");
     Output << "Test 2" << std::endl;
     Output.close();
      */
-    system("pause");
+
+    //system("pause");
+
     return 0;
 }
