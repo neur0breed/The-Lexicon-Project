@@ -2,10 +2,8 @@
 SIP Translation Software
 
 ## For a working environment (CLion)
-In CLion: File->Settings->Editor->Code Style->File Encodings->...
-Change the IDE Encoding to UTF-8, Project Encoding to UTF-8, and Default Encoding for properties files to UTF-8.
-Will test out more settings, but these work.
-
+In CLion: File->Settings->Editor->File Encodings
+Change all encoding properites to UTF-8.
 
 
 ## Project Description
